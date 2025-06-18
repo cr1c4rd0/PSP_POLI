@@ -1,10 +1,298 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-PRUEBA
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de Computadores</title>
+    <style>
+      /* Estilos Generales */
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        background-color: #d6d6d8; 
+        margin: 0;
+        padding: 0;
+        color: #402929;
+      }
+
+      h1 {
+        color: #2c5450; 
+        margin: 30px 0;
+        font-size: 2.8em;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Breadcrumb */
+      .breadcrumb {
+        list-style: none;
+        display: flex;
+        padding: 15px;
+        background-color: #ffffff;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 20px auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+      }
+
+      .breadcrumb li {
+        margin: 0 12px;
+        font-size: 1.1em;
+      }
+
+      .breadcrumb a {
+        text-decoration: none;
+        color: #00796b; 
+        transition: color 0.3s ease;
+      }
+
+      .breadcrumb a:hover {
+        color: #004d40; 
+        text-decoration: underline;
+      }
+
+      .breadcrumb li::after {
+        content: ">";
+        margin-left: 12px;
+        color: #9e9e9e; 
+      }
+
+      .breadcrumb li:last-child::after {
+        content: "";
+      }
+
+      .breadcrumb li:last-child {
+        color: #424242; 
+        font-weight: bold;
+      }
+
+      /* Catálogo de Productos*/
+      .catalogo-flex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px; 
+        margin: 40px auto;
+        max-width: 1240px; 
+      }
+
+      .producto {
+        flex: 1;
+        min-width: 280px;
+        max-width: 380px; 
+        padding: 25px;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+        background-color: #ffffff;
+        text-align: left;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+
+      .producto:hover {
+        transform: translateY(-8px); 
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .producto img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain; 
+        border-radius: 8px;
+        margin-bottom: 15px;
+        background-color: #f5f5f5; 
+      }
+
+      .producto h2 {
+        color: #212121; 
+        font-size: 1.8em;
+        margin-bottom: 10px;
+        min-height: 2.2em; 
+      }
+
+      .producto p {
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 8px;
+        font-size: 1.05em;
+        min-height: 4.5em; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+      }
+
+      .producto p:last-child {
+        font-weight: bold;
+        color: #e65100; 
+        font-size: 1.5em;
+        margin-top: 15px;
+      }
+
+      
+      @media (max-width: 768px) {
+        .breadcrumb {
+          flex-wrap: wrap;
+          padding: 10px;
+        }
+
+        .breadcrumb li {
+          margin: 5px 8px;
+        }
+
+        .catalogo-flex {
+          gap: 20px;
+          margin: 20px auto;
+        }
+
+        .producto {
+          max-width: 90%; 
+          min-width: unset; 
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 2em;
+        }
+
+        .breadcrumb {
+          font-size: 0.9em;
+        }
+
+        .producto {
+          padding: 15px;
+        }
+
+        .producto h2 {
+          font-size: 1.4em;
+        }
+
+        .producto p {
+          font-size: 0.95em;
+        }
+
+        .producto p:last-child {
+          font-size: 1.3em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Catálogo de Computadores</h1>
+
+    <ul class="breadcrumb">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Categorías</a></li>
+      <li><a href="#">Computadores</a></li>
+      <li>Portátiles</li>
+    </ul>
+
+    <div class="catalogo-flex">
+      <div class="producto">
+        <img
+         
+        />
+        <h2>HP 14" Dq0532la</h2>
+        <p>
+          Computador Portátil HP 14" Pulgadas Dq0532la Intel Celeron - RAM 4GB
+          - Disco SSD 128 GB - Plata
+        </p>
+        <p>Precio: $1,199,000 COP</p>
+      </div>
+
+      <div class="producto">
+        <img
+         
+        />
+        <h2>ASUS Vivobook Go 15.6"</h2>
+        <p>
+          Computador Portátil ASUS Vivobook Go 15.6" Pulgadas E1504GA - Intel
+          Core i3 - RAM 8GB - Disco SSD 512 GB SSD - Plateado
+        </p>
+        <p>Precio: $1,649,000 COP</p>
+      </div>
+
+      <div class="producto">
+        <img
+          
+        />
+        <h2>MSI Modern 13.3" F13MG</h2>
+        <p>
+          Computador Portátil MSI Modern 13.3" Pulgadas F13MG - Intel Core i3 -
+          RAM 16GB - Disco SSD 512GB - Negro
+        </p>
+        <p>Precio: $1,799,000 COP</p>
+      </div>
+
+      <div class="producto">
+        <img
+         
+        />
+        <h2>ASUS Vivobook 16" X1605VA</h2>
+        <p>
+          Computador Portátil ASUS Vivobook 16" Pulgadas X1605VA - Intel Core
+          i5 - RAM 8GB - Disco SSD 512GB - Negro
+        </p>
+        <p>Precio: $2,049,000 COP</p>
+      </div>
+
+      <div class="producto">
+        <img
+          
+        />
+        <h2>ASUS Vivobook 16" (24GB)</h2>
+        <p>
+          Computador Portátil ASUS Vivobook 16" Pulgadas X1605VA - Intel Core
+          i5 - RAM 24GB - Disco SSD 1TB - Negro
+        </p>
+        <p>Precio: $3,199,000 COP</p>
+      </div>
+
+      <div class="producto">
+        <img
+         
+        />
+        <h2>ASUS Expertbook 15.6"</h2>
+        <p>
+          Computador Portátil ASUS Expertbook 15.6" Pulgadas P1503X - Intel Core
+          i5 - RAM 16 GB - Disco SSD 1 TB - Gris
+        </p>
+        <p>Precio: $4,249,000 COP</p>
+      </div>
+
+      <div class="producto">
+        <img
+          
+        />
+        <h2>ACER ASPIRE 14" Táctil</h2>
+        <p>
+          Computador Portátil ACER ASPIRE 14" Pulgadas 57EF Táctil - Intel Core
+          Ultra 5 - RAM 16GB - Disco SSD 512GB - Gris
+        </p>
+        <p>Precio: $5,099,000 COP</p>
+      </div>
+
+      <div class="producto">
+        <img
+         
+        />
+        <h2>LENOVO Yoga Slim 15.3"</h2>
+        <p>
+          Computador Portátil LENOVO 15.3" Pulgadas Yoga Slim 7 Táctil - Intel
+          Core Ultra 7 - RAM 32GB - Disco SSD 1TB - Gris
+        </p>
+        <p>Precio: $7,499,000 COP</p>
+      </div>
+
+      <div class="producto">
+        <img
+          
+        />
+        <h2>PREDATOR HELIOS 16" Gamer</h2>
+        <p>
+          Computador Portátil Gamer PREDATOR HELIOS 16" Pulgadas 99PA Intel Core
+          i9 - RAM 16GB - Disco SSD 1TB - Negro
+        </p>
+        <p>Precio: $8,099,000 COP</p>
+      </div>
+    </div>
+  </body>
 </html>
