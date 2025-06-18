@@ -1,5 +1,30 @@
 
 /* CSS accesorio */
+
+/* Estilos para el primer banner (CIRCUITWAVE) */
+.top-banner {
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    padding: 10px 0; /* Espaciado arriba y abajo */
+    font-family: Arial, sans-serif; /* Puedes ajustar la fuente si lo deseas */
+}
+
+.top-banner .banner-logo h1 {
+    font-size: 1.8rem; /* Tamaño de fuente para el logo */
+    margin-bottom: 0; /* Eliminar margen inferior por defecto del h1 */
+}
+
+.top-banner .banner-nav ul li a {
+    font-size: 0.95rem; /* Tamaño de fuente para los enlaces */
+    white-space: nowrap; /* Evita que los enlaces se rompan en varias líneas */
+}
+
+.top-banner .banner-nav ul li a:hover {
+    text-decoration: underline !important; /* Subrayado al pasar el mouse */
+}
+
+/* Ajustes para Bootstrap: el d-flex, justify-content-between, align-items-center
+   en el container del banner ya deberían dar el layout deseado. */
 .colornav {
     background-color: #741d0a !important;
 }
