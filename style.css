@@ -1,7 +1,57 @@
 
 /* CSS accesorio */
+
+/* Estilos para el primer banner (CIRCUITWAVE) */
+.top-banner {
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    padding: 10px 0; /* Espaciado arriba y abajo */
+    font-family: Arial, sans-serif; /* Puedes ajustar la fuente si lo deseas */
+}
+
+.top-banner .banner-logo h1 {
+    font-size: 1.8rem; /* Tamaño de fuente para el logo */
+    margin-bottom: 0; /* Eliminar margen inferior por defecto del h1 */
+}
+
+.top-banner .banner-nav ul li a {
+    font-size: 0.95rem; /* Tamaño de fuente para los enlaces */
+    white-space: nowrap; /* Evita que los enlaces se rompan en varias líneas */
+}
+
+.top-banner .banner-nav ul li a:hover {
+    text-decoration: underline !important; /* Subrayado al pasar el mouse */
+}
+
+/* Ajustes para Bootstrap: el d-flex, justify-content-between, align-items-center
+   en el container del banner ya deberían dar el layout deseado. */
 .colornav {
     background-color: #741d0a !important;
+}
+/*  título de la sección */
+.titulo-seccion-oscuro {
+    background-color: #212529; /* Color de fondo  */
+    color: #f8f9fa; /* Color de texto claro  */
+    padding: 15px 20px; /* Un poco de padding arriba/abajo y a los lados */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    margin-bottom: 2rem; /* Espacio debajo del título */
+    display: inline-block; /* Para que el padding y el border-radius se apliquen bien al contenido */
+    max-width: fit-content; /* Ajustar el ancho al contenido */
+    /* Para centrar el elemento `inline-block` dentro de su contenedor */
+    display: block; /* Vuelve a block para que `margin: auto` funcione */
+    margin-left: auto;
+    margin-right: auto;
+}
+/*  botones de agregar al carrito */
+.add-to-cart-button {
+    background-color: #6c757d; /* Un gris medio */
+    border-color: #6c757d; /* Borde del mismo color */
+    color: #ffffff; /* Texto blanco  */
+}
+
+.add-to-cart-button:hover {
+    background-color: #5a6268; /* Un gris un poco más oscuro al pasar el mouse */
+    border-color: #5a6268;
 }
 
 /* CSS home */
