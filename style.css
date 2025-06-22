@@ -59,4 +59,20 @@
 
 
 
-/* CSS computadores */
+/* CSS contacto */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.space {
+    margin-top: 5em; /* Espacio superior */
+}
