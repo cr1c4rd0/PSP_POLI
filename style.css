@@ -55,7 +55,9 @@
 }
 
 /* CSS home */
-
+.center {
+    text-align: center; /* Centrar el texto */
+}
 
 
 
