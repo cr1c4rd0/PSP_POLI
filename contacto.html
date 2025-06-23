@@ -47,19 +47,19 @@
             <p>Escribenos y dejanos un mensaje, y nos podremos en contacto para ayudarte en todo lo que necesitas</p>
         </div>
         <div class="col-md">
-            <form>
+            <form action="mailto:cristianricardo87@gmail.com" method="POST" enctype="text/plain">
                 <div class="mb-3">
                     <label for="inputEmail1" class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" name="mail">
                     <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie..</div>
                 </div>
                 <div class="mb-3">
                     <label for="inputAsunto1" class="form-label">Asunto</label>
-                    <input type="text" class="form-control" id="inputAsunto1">
+                    <input type="text" class="form-control" id="inputAsunto1" name="asunto">
                 </div>
                 <div class="mb-3">
                     <label for="formControlTextarea1" class="form-label">Cuentanos</label>
-                    <textarea class="form-control" id="formControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" id="formControlTextarea1" rows="3" name="mensaje"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
