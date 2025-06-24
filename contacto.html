@@ -48,18 +48,30 @@
             <img src="assets/support.jpg" alt="" width="85%">
         </div>
         <div class="col-md">
-            <form action="mailto:cristianricardo87@gmail.com" method="POST" enctype="text/plain">
+            <form class="needs-validation" novalidate>
                 <div class="mb-3">
                     <label for="inputEmail1" class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" name="mail">
-                    <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie..</div>
+                    <input type="email" class="form-control" id="inputEmail1" name="mail" required>
+                    <div class="form-text">Nunca compartiremos tu correo electrónico con nadie.</div>
+                    <div class="valid-feedback">
+                        Correo electrónico válido.
+                    </div>
+                    <div class="invalid-feedback">
+                        Verifica el correo electrónico.
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="inputAsunto1" class="form-label">Asunto</label>
-                    <input type="text" class="form-control" id="inputAsunto1" name="asunto">
+                    <input type="text" class="form-control" id="inputAsunto1" name="asunto" required>
+                    <div class="valid-feedback">
+                        Asunto válido.
+                    </div>
+                    <div class="invalid-feedback">
+                        Verifica el asunto.
+                    </div>
                 </div>
                 <div class="mb-3">
-                    <label for="formControlTextarea1" class="form-label">Cuentanos</label>
+                    <label for="formControlTextarea1" class="form-label">Cuéntanos</label>
                     <textarea class="form-control" id="formControlTextarea1" rows="3" name="mensaje"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
@@ -72,5 +84,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<script src="js/validacion.js"></script>
 </body>
 </html>
